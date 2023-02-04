@@ -1,41 +1,57 @@
 
+body{
+    background-image:url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; 
+   
+    
+}
+
   .body {
-    background-color:white;
     display:flex;
     margin:0;
     flex-direction: column;
     width:100%;
     position:sticky;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    
   }
-  
+
   .headercontainer {
     width: 100%;
     display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     justify-content: space-between;
     align-items: center;
     flex-wrap:nowrap;
-    background-color: white;
+    background-color:white;
   }
   
   .h1 {
-    font-weight:bold;
     padding:5px;
-    color:darkslategrey;
+    text-transform:uppercase;
+    font-size:24px;
+    margin:0;
+    color:black;
   }
 
+  h1{
+    font-size:36px;
+  }
   .main-nav ul {
     text-align: center;
   }
 
   .main-nav a {
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
     text-transform:uppercase;
-    font-weight:bold;
-    color:darkslategrey;
+    font-size:10px;
+    color:black;
     text-decoration: none;
+  }
+
+  .main-nav a:hover {
+    opacity:.6;
   }
 
   .main-nav li{
@@ -66,9 +82,48 @@
     flex-direction:column;
     justify-content: center;
     color:darkslategrey;
-    background-color: lightgrey;
+    background-color: rgb(224, 223, 223);
   }
   
+  .intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:50px;
+
+  }
+
+  .intro-card {
+    height: 500px;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    display: flex;
+  }
+
+  .intro-textbox{
+    width:400px;
+    height:400px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .intro-text{
+    margin:25px;
+    color:black;
+    opacity:1;
+  }
+
+  .intro-picture {
+    height:400px;
+    display:flex;
+    
+  }
+
+  .img {
+    object-fit:cover;
+  }
+
   .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -76,8 +131,8 @@
   }
   
   .card {
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
