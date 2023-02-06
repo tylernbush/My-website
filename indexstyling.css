@@ -2,8 +2,7 @@
 body{
     background-image:url(images/background.jpg);
     background-repeat: no-repeat;
-    background-size:cover; 
-   
+    background-size:cover;  
     
 }
 
@@ -13,7 +12,7 @@ body{
     flex-direction: column;
     width:100%;
     position:sticky;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "BentonSansLight", Arial, Helvetica, sans-serif;
     
   }
 
@@ -26,20 +25,30 @@ body{
     background-color:white;
   }
   
+
   .h1 {
     padding:5px;
     text-transform:uppercase;
     font-size:24px;
     margin:0;
-    color:black;
+    color: #03045e;
   }
 
+
   h1{
-    font-size:36px;
+    font-size:50px;
   }
+
+  .imglogo {
+    object-fit:contain;
+    width: 20px;
+  }
+
   .main-nav ul {
     text-align: center;
+    margin:0;
   }
+
 
   .main-nav a {
     display: inline-block;
@@ -50,13 +59,16 @@ body{
     text-decoration: none;
   }
 
+
   .main-nav a:hover {
     opacity:.6;
   }
 
+
   .main-nav li{
     display: inline;
   }
+
 
   .h2 {
     text-align:center;
@@ -68,11 +80,13 @@ body{
     margin:0;
   }
 
+
   .h3{
     font-size:30px;
     margin-top:5px;
     margin-bottom: 50px;
   }
+
 
   .footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -85,19 +99,22 @@ body{
     background-color: rgb(224, 223, 223);
   }
   
+
   .intro-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top:50px;
-
+    margin-bottom: 50px;
   }
 
+
   .intro-card {
-    height: 500px;
+    height: 400px;
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     display: flex;
   }
+
+
 
   .intro-textbox{
     width:400px;
@@ -108,11 +125,14 @@ body{
     background-color: rgba(255, 255, 255, 0.7);
   }
 
+
   .intro-text{
-    margin:25px;
+    margin:34px;
     color:black;
     opacity:1;
+    line-height: 1.25;
   }
+
 
   .intro-picture {
     height:400px;
@@ -122,6 +142,20 @@ body{
 
   .img {
     object-fit:cover;
+  }
+
+  .projects{
+    display:flex;
+    flex-direction:column;
+    background-color:rgba(181, 188, 194,.6);
+  }
+
+  .project-header{
+    font-size:36px;
+    font-weight:bold;
+    display:flex;
+    margin:20px;
+    justify-content: center;
   }
 
   .card-container {
@@ -155,13 +189,17 @@ body{
     width: 80%;
   }
   
-
+  .skills {
+    display:flex;
+    height:400px;
+  }
 
   .form-container {
     width:250px;
     padding: 20px;
     border-radius: 10px;
   }
+
 
   .bottomfooter{
     display: flex;
@@ -179,6 +217,12 @@ body{
     flex-direction: column;
     border-left:1px solid white;
   }
+
+  .socialmedia {
+    margin-top:20px;
+    border-bottom:1px rgb(2, 2, 2);
+  }
+
   
   label {
     font-weight: bold;
